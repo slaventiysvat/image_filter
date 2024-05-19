@@ -47,6 +47,13 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+#folders
+/vcpkg
+/builds
+.DS_Store
+/build
+/out
+
 # Mono auto generated files
 mono_crash.*
 
