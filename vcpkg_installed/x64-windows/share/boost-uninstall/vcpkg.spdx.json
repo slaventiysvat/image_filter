@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/boost-uninstall-x64-windows-1.83.0-ce6dd22b-8cf5-48d2-8f80-c9f41b0e1615",
+  "name": "boost-uninstall:x64-windows@1.83.0 64f50115f65364f297a8fd83e0cfe7904024801b07040c05fafd99ceda149dbb",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-27de5b69dac4b6fe8259d283cd4011e6d20a84ce"
+    ],
+    "created": "2024-05-19T19:29:43Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "boost-uninstall",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "1.83.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "Internal vcpkg port used to uninstall Boost",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "boost-uninstall:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "64f50115f65364f297a8fd83e0cfe7904024801b07040c05fafd99ceda149dbb",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./D:/CppEducation/CppFilter/CppCMakeVcpkgTemplate/vcpkg/ports/boost-uninstall/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "312c9bdc0c2c9d16736f0044c35dd05a935ef2c8ed097c6e35dc74e167a2f72e"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./D:/CppEducation/CppFilter/CppCMakeVcpkgTemplate/vcpkg/ports/boost-uninstall/vcpkg-cmake-wrapper.cmake",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a8f11f0c7f25e8dd43c241029e1fbed538716ec68d40e54563f575d172926fcd"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./D:/CppEducation/CppFilter/CppCMakeVcpkgTemplate/vcpkg/ports/boost-uninstall/vcpkg.json",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dba036e2d2c26f092ab253229b3b22dc27a6503180588b6c827a4f20a508d8dd"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "main",
+  "version-string": "latest",
+  "dependencies": [
+    "tiff",
+    "fmt",
+    "boost-config",
+    "sqlite3",
+    "opencv"
+  ]
+}

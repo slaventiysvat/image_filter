@@ -1,0 +1,297 @@
+Package: boost-uninstall
+Version: 1.83.0
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 64f50115f65364f297a8fd83e0cfe7904024801b07040c05fafd99ceda149dbb
+Description: Internal vcpkg port used to uninstall Boost
+Status: install ok installed
+
+Package: boost-vcpkg-helpers
+Version: 1.83.0
+Depends: boost-uninstall
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 859296758079452a449d4d50ecca3a5325693807cb45c7210f0bccbdf6e17f3b
+Description: Internal vcpkg port used to modularize Boost
+Status: install ok installed
+
+Package: boost-config
+Version: 1.83.0
+Depends: boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 40228bf7932e27bc69e985ce7a405580f4230161a42f04d79ea9a9ba4a70a48f
+Description: Boost config module
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0ae298c628f8a51ad010af92cbe33641fc7e2613d0b276042f2f22239d8c6695
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2023-05-04
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 60cae53ad1109eb49d9bad49df19c8d2b80ebe0644871ac15d62e9514ab6c01e
+Status: install ok installed
+
+Package: fmt
+Version: 10.1.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 275df2936608e964f03fe8f86fa04a374a5d9ac14d63e9538ec4076839aa7bc2
+Description: Formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.
+Status: install ok installed
+
+Package: sqlite3
+Version: 3.43.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5bfb14b595875b26796ccc2881cdbbf854274edce1d9ddea38af95d3aaa75a9e
+Description: SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
+Default-Features: json1
+Status: install ok installed
+
+Package: sqlite3
+Feature: json1
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable JSON functionality for sqlite3
+Status: install ok installed
+
+Package: libwebp
+Version: 1.3.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d45aa7fd431af4717cfe5709ac2b386f8af647c3e96f2408f948b74e990ed552
+Description: WebP codec: library to encode and decode images in WebP format
+Default-Features: libwebpmux, nearlossless, simd
+Status: install ok installed
+
+Package: libwebp
+Feature: libwebpmux
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the libwebpmux library
+Status: install ok installed
+
+Package: libwebp
+Feature: nearlossless
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable near-lossless encoding
+Status: install ok installed
+
+Package: libwebp
+Feature: simd
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable any SIMD optimization.
+Status: install ok installed
+
+Package: libwebp
+Feature: unicode
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build Unicode executables. (Adds definition UNICODE and _UNICODE)
+Status: install ok installed
+
+Package: zlib
+Version: 1.3
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 559e729de21f87f9615b5bd879f5d0301c85e05a00d942412dfcff697cd65538
+Description: A compression library
+Status: install ok installed
+
+Package: liblzma
+Version: 5.4.4
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 3ddf63362649cc5167cde463e18482307674af7cdbbfa7c7dfd8dff6cdbc87fc
+Description: Compression library with an API similar to that of zlib.
+Status: install ok installed
+
+Package: libjpeg-turbo
+Version: 3.0.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 66c5bda40e390d8f33ed5043099abdc9339e9697aa56673334adb9fe76bd51e8
+Description: libjpeg-turbo is a JPEG image codec that uses SIMD instructions (MMX, SSE2, NEON, AltiVec) to accelerate baseline JPEG compression and decompression on x86, x86-64, ARM, and PowerPC systems.
+Status: install ok installed
+
+Package: tiff
+Version: 4.6.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 668667742919cf89312baed62a8b68b83ce7e515a9f9228f5b887bc51916e45c
+Description: A library that supports the manipulation of TIFF image files
+Default-Features: jpeg, lzma, zip
+Status: install ok installed
+
+Package: tiff
+Feature: jpeg
+Depends: libjpeg-turbo
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support JPEG compression in TIFF image files
+Status: install ok installed
+
+Package: tiff
+Feature: lzma
+Depends: liblzma
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support LZMA compression in TIFF image files
+Status: install ok installed
+
+Package: tiff
+Feature: zip
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support ZIP/deflate compression in TIFF image files
+Status: install ok installed
+
+Package: quirc
+Version: 1.1
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 61ea364ad8a9237ff4250e60b69c083cebddeaedfc161b2dfa6d83bb8fad78a8
+Description: quirc is one of the C library available for scanning QR Codes
+Status: install ok installed
+
+Package: libpng
+Version: 1.6.39
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 97c22eba8dea9587a9c7389dcc243a01b8628832c769e5dc59d7e8c0e9fe9c40
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Status: install ok installed
+
+Package: protobuf
+Version: 3.21.12
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 2b9b3291b230eeec65731bce23140deb5b7899b4367c72ddd17d1b65f4b67e56
+Description: Protocol Buffers - Google's data interchange format
+Status: install ok installed
+
+Package: flatbuffers
+Version: 23.5.26
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8248226730e0ce22f823477bc12a28da75a43fa20f70dd9a84f1c295fde6b0e5
+Description: Memory Efficient Serialization Library
+    FlatBuffers is an efficient cross platform serialization library for games and other memory constrained apps. It allows you to directly access serialized data without unpacking/parsing it first, while still having great forwards/backwards compatibility.
+Status: install ok installed
+
+Package: vcpkg-get-python-packages
+Version: 2023-07-28
+Architecture: x64-windows
+Multi-Arch: same
+Abi: cbcb805da411afe6eed22393a22189fc010e9e8c743d5266ea21ac6f13bd8b8c
+Status: install ok installed
+
+Package: opencv4
+Version: 4.8.0
+Port-Version: 7
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-get-python-packages, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 363162269411965005c26df74eb35d12d8d2587edc30667268e5554b6a5451e0
+Description: computer vision library
+Default-Features: default-features
+Status: install ok installed
+
+Package: opencv4
+Feature: default-features
+Architecture: x64-windows
+Multi-Arch: same
+Description: Platform-dependent default features
+Status: install ok installed
+
+Package: opencv4
+Feature: dnn
+Depends: flatbuffers, protobuf
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable dnn module
+Status: install ok installed
+
+Package: opencv4
+Feature: jpeg
+Depends: libjpeg-turbo
+Architecture: x64-windows
+Multi-Arch: same
+Description: JPEG support for opencv
+Status: install ok installed
+
+Package: opencv4
+Feature: png
+Depends: libpng
+Architecture: x64-windows
+Multi-Arch: same
+Description: PNG support for opencv
+Status: install ok installed
+
+Package: opencv4
+Feature: quirc
+Depends: quirc
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable QR code module
+Status: install ok installed
+
+Package: opencv4
+Feature: tiff
+Depends: tiff
+Architecture: x64-windows
+Multi-Arch: same
+Description: TIFF support for opencv
+Status: install ok installed
+
+Package: opencv4
+Feature: webp
+Depends: libwebp
+Architecture: x64-windows
+Multi-Arch: same
+Description: WebP support for opencv
+Status: install ok installed
+
+Package: opencv
+Version: 4.8.0
+Depends: opencv4
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4dfad5c4f27a19d59aa07b6d8ca0067b3105574c91464035066a6dc6cdaed515
+Description: Computer vision library
+Default-Features: default-features
+Status: install ok installed
+
+Package: opencv
+Feature: default-features
+Depends: opencv4
+Architecture: x64-windows
+Multi-Arch: same
+Description: Platform-dependent default features
+Status: install ok installed
+
