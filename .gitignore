@@ -49,6 +49,7 @@
 
 #folders
 /vcpkg
+/vcpkg_installed
 /builds
 .DS_Store
 /build
