@@ -10,10 +10,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(ImageFilter VERSION 1.0)
 
+set(TIFF_NAMES ${TIFF_NAMES} tiff libtiff tiff3 libtiff3)
+
+set(TIFF_LIBRARY "${CMAKE_CURRENT_LIST_DIR}/vcpkg_installed/x64-windows/lib/tiff.lib")
+set(TIFF_INCLUDE_DIR "${CMAKE_CURRENT_LIST_DIR}/vcpkg_installed/x64-windows/include")
+
 find_package(unofficial-sqlite3 CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
 find_package(OpenCV CONFIG REQUIRED)
-find_package(TIFF REQUIRED)
+find_package(tiff REQUIRED)
 
 include_directories(main PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/image_processor/inc)
 
@@ -39,5 +44,5 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} PRIVATE opencv_core opencv_imgproc opencv_imgcodecs opencv_highgui unofficial::sqlite3::sqlite3 TIFF::TIFF fmt::fmt-header-only)
 
 # Set build types
-set(CMAKE_CXX_FLAGS_DEBUG "-g")
-set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+#set(CMAKE_CXX_FLAGS_DEBUG "-g")
+#set(CMAKE_CXX_FLAGS_RELEASE "-O3")
