@@ -7,6 +7,10 @@ class stream_manager
 
 public:
 	
+	stream_manager() {}
+
+	~stream_manager() {}
+	
 	void print_matrix(Matrix<uint8_t>arr, int m, int n);
 	void print_vector(std::vector<uint8_t> arr, int m);
 

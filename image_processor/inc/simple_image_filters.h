@@ -6,7 +6,13 @@ class simple_image_filters
 {
 
 public:
+	simple_image_filters() {
 
+	}
+
+	~simple_image_filters() {
+	
+	}
 
 private:
 

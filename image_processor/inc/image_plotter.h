@@ -6,6 +6,9 @@ class image_plotter
 
 	public:
 
+	image_plotter() {}
+	~image_plotter() {}
+
 	void print_both_images(cv::Mat input_image,
 			cv::Mat image_out);
 

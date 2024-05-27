@@ -7,6 +7,10 @@ class image_mat_tools
 
 
   public:
+
+	  image_mat_tools() {}
+	  ~image_mat_tools() {}
+
 	  Matrix<uint8_t> border_replication_circular(Matrix<uint8_t> input_array, int kernel_size);
 
 	  Matrix<float> border_replication_symmetric_float(Matrix<float> input_array, int kernel_size);

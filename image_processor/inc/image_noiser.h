@@ -5,6 +5,10 @@ class image_noiser
 {
 
 public:
+
+	image_noiser() {}
+	~image_noiser() {}
+
 	image_noiser(double Mean = 0.0, double StdDev = 0.01);
 
 	void AddGaussianNoise_Opencv(cv::Mat mSrc,

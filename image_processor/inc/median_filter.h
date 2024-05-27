@@ -6,6 +6,8 @@ class median_filter
 {
 
    public:
+	   median_filter() {}
+	   ~median_filter() {}
 	   Matrix<uint8_t> median_filter_2_dims(Matrix<uint8_t> input_image,
 		   int kernel_size);
 

@@ -4,6 +4,8 @@
 class gauss_filter
 {
 public:
+	gauss_filter() {}
+	~gauss_filter() {}
 
 	Matrix<uint8_t> gauss_filter_2_dims(Matrix<uint8_t> input_image,
 		float SIGMA);

@@ -4,7 +4,11 @@
 class convolution_tools
 {
 
+
 public:
+
+	convolution_tools() {}
+	~convolution_tools() {}
 
 	Matrix<uint8_t> convolution_2_dims(Matrix<uint8_t> input_imageput, Matrix<uint8_t> kernel_window);
 
